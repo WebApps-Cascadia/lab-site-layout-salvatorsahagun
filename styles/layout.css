@@ -5,16 +5,46 @@
 
 /* Positioning of the Header, Nav, Main, Footer */
 
+body {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative; /* Context for absolute children */
+    min-width: 850px;
+}
 
+header {
+    flex-basis: 100%;
+    order: 1;
+}
 
+nav {
+    flex: 1;
+    order: 2;
+}
 
+main {
+    flex: 4;
+    order: 3;
+}
 
-/* End Positioning of the Header, Nav, Main, Footer
- ********************
+footer {
+    flex-basis: 100%;
+    order: 4;
+}
+
+/* Site nav list items stack vertically in layout */
+nav li {
+    display: block;
+}
+
+/* End Positioning of the Header, Nav, Main, Footer */
+
 /* Positioning of Client Login Nav box */
 
-
-
-
+nav#client {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
 
 /* End Positioning of Client Login Nav box */
